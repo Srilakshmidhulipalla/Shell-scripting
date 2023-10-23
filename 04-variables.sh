@@ -2,4 +2,5 @@
 
 DATE=$(date)
 
-echo " the script is excuted at time stamp:"
+echo " the script is excuted at time stamp:$DATE"
+
