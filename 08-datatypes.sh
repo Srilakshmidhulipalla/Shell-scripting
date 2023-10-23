@@ -2,4 +2,3 @@
 
 PERSONS=("Ramesh,Suresh,Mahesh")
 echo " first person is: ${PERSONS[0]}"
-echo  " all perosns is: ${PERSONS[@]}"
