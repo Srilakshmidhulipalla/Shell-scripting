@@ -6,8 +6,8 @@ empid=1413043
 echo srilakshmi empid $empid  
 companyname=tcs
 echo experinced in $companyname
-DATE=($date)
+DATE=$(date)
  echo "tcs organazation leave: $DATE"
- 
+
 
 
