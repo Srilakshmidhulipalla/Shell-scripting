@@ -7,8 +7,9 @@ echo srilakshmi empid $empid
 companyname=tcs
 echo experinced in $companyname
 
-DATE=$(date -d "$days_ago days ago" '+%Y-%m-%d')    
- echo "tcs organazation leave: $DATE"
+olddate=$(date -d "$month_ago month ago " '+%Y-%m-%d')    
+ echo "tcs organazation leave: $olddate"
+ 
 
 
 
