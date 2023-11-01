@@ -1,5 +1,5 @@
 #!/bin/bash
-NAMES=("rabbitmq" "reddis" "mysql" "web" "payment")
+NAMES=("rabbitmq" "reddis" "mysql" "web" "mangodb" "payment")
 
 for i in "${NAMES[@]}"
 do
@@ -7,4 +7,3 @@ do
   echo "NAMES: $i"
 
  done
-  
