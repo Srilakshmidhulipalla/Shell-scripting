@@ -6,7 +6,7 @@ SECURITY_GROUP_ID="sg-0315238430b428af2"
 # if mysql and mongodb only t3.micro rest all t2.micro
 for i in "${NAMES[@]}"
 do
-  if [ [$i == "mysql"|| $i =="mongodb"]]
+  if [[$i == "mysql"|| $i =="mongodb"]]
   then
   INSTANCE_TYPE="t3.micro"
   else
