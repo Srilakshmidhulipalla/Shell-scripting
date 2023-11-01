@@ -1,0 +1,10 @@
+#!/bin/bash
+NAMES=("rabbitmq" "reddis" "mysql" "web" "payment")
+
+for i in "${NAMES[@]}"
+do
+ 
+  echo "NAMES: $i"
+
+ done
+  
