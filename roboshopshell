@@ -1,9 +1,19 @@
 #!/bin/bash
 NAMES=("rabbitmq" "reddis" "mysql" "web" "mangodb" "payment")
-
+INSTANCE_TYPE=
+IMAGE_ID="ami-03265a0778a880afb"
+SECURITY_GROUP_ID="sg-0315238430b428af2"
+# if mysql and mongodb only t3.micro rest all t2.micro
 for i in "${NAMES[@]}"
 do
- 
+  if [ [$i == "mysql"|| $i= "mongodb"]]
+  then
+  INSTANCE_TYPE="t3.micro"
+  else
+  INSTANCE_TYPE="t2.medium"
+  fi
   echo "NAMES: $i"
-
+aws ec2 run-instances --image-id $IMAGE_ID --instance-type $INSTANCE_TYPE --security-group-ids $SECURITY_GROUP_ID
+ --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
  done
+ 
